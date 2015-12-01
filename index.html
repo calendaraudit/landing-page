@@ -11,7 +11,7 @@
 		<div class="side left">
 			<div class="wrap">
 				<h1>Startup Calendar Audit</h1>
-				<p>A simple tool for startup founders and CEOs to keep track of the time allocation.</p>
+				<p>A simple tool for startup founders and CEOs to keep track of their time expenditure.</p>
 				<p>Coming Soon to the AppStore.</p>
 				<a class="button" target="_blank" href="http://eepurl.com/bHNFhr">Signup for a Beta Access</a>
 				<ul>
@@ -24,6 +24,10 @@
 		<div class="side right gradient">
 			<div class="phone">
 				<img src="./images/phone.png">
+				<div class="phone-inner">
+					<img class="second" src="./images/screen-1.png">
+					<img class="first" src="./images/screen-2.png">
+				</div>
 			</div>
 		</div>
 
@@ -60,6 +64,26 @@
 				left: 50%;
 				margin-left: -163px;
 				margin-top: -328px;
+			}
+
+			.phone-inner{
+				overflow: hidden;
+				position: absolute;
+				top: 74px;
+				left: 20px;
+				height: 506px;
+				width: 285px;
+			}
+
+			.phone-inner:hover .second{
+				left: 0px;
+			}
+
+			.second{
+				position: absolute;
+				left: 305px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.2);
+				transition: all 0.2s;
 			}
 
 			.wrap{
